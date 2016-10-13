@@ -37,6 +37,6 @@
         </record>        
         <menuitem name="UNEFA" id="unefa_horizontal_menu" sequence="10" />        
         <menuitem name="Inicio" id="inicio_vertical_menu" parent="unefa_horizontal_menu" sequence="10"/>        
-        <menuitem name="Atleta" id="atleta_vertical_menu" action="action_atleta" parent="inicio_horizontal_menu" sequence="10"/>           
+        <menuitem name="Atleta" id="atleta_vertical_menu" action="action_atleta" parent="inicio_vertical_menu" sequence="10"/>           
      </data>
 </openerp>

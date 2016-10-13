@@ -3,7 +3,7 @@
 from openerp.osv import osv, fields
 
 class atleta (osv.osv): 
-	_name="atleta"
+	_name= 'atleta'
 	
 	_columns={
 		'cedula': fields.integer('Cédula de Identidad',size=10, required=True, help='Introduzca su número de de cédula de identidad'),
