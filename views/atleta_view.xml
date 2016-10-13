@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="view_atleta_form" model="ir.ui.view">
+			<field name="name">atleta_form</field>
+            <field name="model">atleta</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+				<form string="atleta">	
+					<group>
+						<field name="cedula"/>
+						<field name="nombre"/>
+						<field name="apellido"/>
+						<field name="fecha_nacimiento"/>
+					</group>
+				</form>
+            </field>
+        </record>        
+        <record id="view_atleta_tree" model="ir.ui.view">
+            <field name="name">atleta_tree</field>
+            <field name="model">atleta</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="atleta">
+					<field name="cedula"/>
+					<field name="nombre"/>
+					<field name="apellido"/>
+					<field name="fecha_nacimiento"/>
+                </tree>
+            </field>
+        </record>        
+        <record model="ir.actions.act_window" id="action_atleta">
+			<field name="name">atleta</field>
+			<field name="res_model">atleta</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+        </record>        
+        <menuitem name="UNEFA" id="unefa_horizontal_menu" sequence="10" />        
+        <menuitem name="Inicio" id="inicio_vertical_menu" parent="unefa_horizontal_menu" sequence="10"/>        
+        <menuitem name="Atleta" id="atleta_vertical_menu" action="action_atleta" parent="inicio_horizontal_menu" sequence="10"/>           
+     </data>
+</openerp>
