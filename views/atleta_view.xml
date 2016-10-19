@@ -10,8 +10,9 @@
 					<group>
 						<field name="cedula"/>
 						<field name="nombre"/>
-						<field name="apellido"/>
-						<field name="fecha_nacimiento"/>
+						<field name="disciplina"/>
+						<field name="categoria"/>
+						<field name="rendimiento"/>						
 					</group>
 				</form>
             </field>
@@ -24,8 +25,9 @@
                 <tree string="atleta">
 					<field name="cedula"/>
 					<field name="nombre"/>
-					<field name="apellido"/>
-					<field name="fecha_nacimiento"/>
+					<field name="disciplina"/>
+					<field name="categoria"/>
+					<field name="rendimiento"/>				
                 </tree>
             </field>
         </record>        
